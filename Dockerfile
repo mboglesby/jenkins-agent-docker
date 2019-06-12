@@ -2,7 +2,7 @@
 FROM jenkins/jnlp-slave
 
 # Use DOCKER_GID value passed in by user
-ARG DOCKER_GID
+ARG DOCKER_GID=113
 
 # Set maintainer email address
 LABEL maintainer="mboglesby@gmail.com"
