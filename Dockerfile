@@ -11,7 +11,7 @@ RUN curl -L https://download.docker.com/linux/static/stable/x86_64/docker-18.09.
 RUN rm -rf /tmp/docker-install/docker/dockerd
 RUN mv /tmp/docker-install/docker/docker* /usr/local/bin/
 RUN rm -rf /tmp/docker-install
-RUN groupadd docker
+RUN groupadd -g $DOCKER_GID docker
 RUN usermod -aG staff,docker jenkins
 
 # Run container as user 'jenkins'
