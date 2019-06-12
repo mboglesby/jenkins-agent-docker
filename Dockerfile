@@ -1,7 +1,7 @@
 # Use the official Jenkins agent image as a base
 FROM jenkins/jnlp-slave
 
-# Use DOCKER_GID value passed in by user
+# Use DOCKER_GID value of 113 if not passed in by user
 ARG DOCKER_GID=113
 
 # Set maintainer email address
