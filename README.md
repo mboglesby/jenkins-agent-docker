@@ -1,5 +1,5 @@
 # jenkins-agent-with-docker
-Jenkins Agent Docker container with Docker installed
+This is a Jenkins Agent Docker container with Docker installed within the container. This container can be used to spin up a Jenkins Agent that has the ability to perform Docker build operations.
 
 ### Use the following docker command to build the image: ###
 
